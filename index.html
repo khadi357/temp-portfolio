@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Khadijah Hassan, junior frontend web developer. Portfolio of projects and skills." />
+  <title>Khadijah Hassan | Junior Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!--===== NAV BAR =====-->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a class="logo" href="#home" aria-label="Khadijah Hassan, home">KH</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--===== HERO SECTION =====-->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-role">Junior frontend developer</p>
+          <h1>Hello, I'm Khadijah Hassan.</h1>
+          <p>I build responsive websites and I'm excited to keep learning and growing in the field.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">See my projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Put your photo at images/profile.jpg -->
+          <img src="C:\Users\HP\Downloads\Phone Link\20240817_085522.jpg"  alt="Portrait of Khadijah Hassan" width="420" height="520" />
+        </div>
+      </div>
+    </section>
+
+    <!--===== ABOUT SECTION =====-->
+    <section class="about" id="about">
+      <div class="container narrow">
+        <h2>About me</h2>
+        <p>I'm a motivated junior frontend developer who enjoys creating engaging, user-friendly web experiences. I'm currently building my skills and I'm eager to contribute to meaningful projects.</p>
+        <p>I look forward to collaborating with others to make great things for the web. Let's connect and explore opportunities.</p>
+      </div>
+    </section>
+
+    <!--===== SKILLS SECTION =====-->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>My skills</h2>
+        <ul class="skills-container">
+          <li class="skill-card">HTML</li>
+          <li class="skill-card">CSS</li>
+          <li class="skill-card">JavaScript</li>
+          <li class="skill-card">Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--===== PROJECT SECTION =====-->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My projects</h2>
+        <div class="projects-container">
+          <article class="project-card">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\1st website image.png" alt="Screenshot of the student page project" loading="lazy" />
+            <div class="project-body">
+              <h3>Student page</h3>
+              <p>A landing page showing student information, built with HTML and CSS.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\2nd website image.png" alt="Screenshot of the form project" loading="lazy" />
+            <div class="project-body">
+              <h3>Form</h3>
+              <p>A simple form for user input, built with HTML and CSS.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\3rd website image.png"  alt="Screenshot of the Spendwise " loading="lazy" />
+            <div class="project-body">
+              <h3>Spendwise</h3>
+              <p>A fintech app built using react.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--===== CONTACT SECTION =====-->
+    <section id="contact" class="contact">
+      <div class="container narrow">
+        <h2>Contact me</h2>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+          <span class="error" id="name-error" aria-live="polite"></span>
+
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+          <span class="error" id="email-error" aria-live="polite"></span>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error" id="message-error" aria-live="polite"></span>
+
+          <button type="submit" class="btn">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer>
+    <p>&copy; <span id="year">2025</span> Khadijah Hassan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
